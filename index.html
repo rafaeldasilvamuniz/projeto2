@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de médias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Noto+Sans:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+   <div class="container">
+    <header>
+        <img src="./images/caderno.png" alt="diploma">
+        <h1>Agenda de Contatos</h1>
+    </header> 
+    <form id="form-atividade">
+      <input type= "text" id="nome" required placeholder="Nome" />
+      <input type= "text" id="telefone" maxlength="15" placeholder="99-99999-9999" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"/>
+      <!--<input type= "number" id="telefone" required placeholder="Telefone" />-->
+      <!--<p:inputMask id="celular" value="#{usuarioMB.usuario.celular}" mask="(99) 99999-9999" required="true" />-->
+      <button type="submit">Cadastrar</button>
+    </form>
+    <table cellspacing = "70">
+      <thead>
+         <tr>
+            <th>
+              Nome
+            </th> 
+            <th>Telefone</th>
+            <!--<th>Aprovado?</th>-->
+         </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+         <tr>
+             <!--<td>Média final</td>-->
+             <td id="nome">MODELO TESTE</td>
+             <td id="telefone">22-99999-9999<span class="Agenda"></span></td>
+         </tr>
+      </tfoot>
+    </table>
+   </div>
+   <script src="./main.js"></script>
+</body>
+</html>
